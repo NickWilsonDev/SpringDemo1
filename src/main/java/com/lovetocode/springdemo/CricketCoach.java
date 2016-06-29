@@ -4,9 +4,32 @@ public class CricketCoach implements Coach {
 
 	private FortuneService fortuneService;
 	
+	// add fields for setter injection
+	private String emailAddress;
+	
+	private String team;
+	
 	// make a no argument constructor
 	public CricketCoach() {
 		System.out.println("CricketCoach inside no-arg constructor");
+	}
+	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("inside setter for email address for CricketCoach");
+		this.emailAddress = emailAddress;
+	}
+	
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("inside setter for team for CricketCoach");
+		this.team = team;
 	}
 	
 	
